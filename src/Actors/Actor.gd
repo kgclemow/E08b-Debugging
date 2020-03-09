@@ -12,3 +12,5 @@ var _velocity: = Vector2.ZERO
 
 func _physics_process(delta: float) -> void:
 	_velocity.y += gravity * delta
+
+#no errors

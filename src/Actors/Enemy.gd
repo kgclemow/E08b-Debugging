@@ -14,7 +14,6 @@ func _ready() -> void:
 func _physics_process(delta: float) -> void:
 	_velocity.x *= -1 if is_on_wall() else 1
 	_velocity.y = move_and_slide(_velocity, FLOOR_NORMAL).y
-	_velocity.y = -speed.x
 
 
 func _on_StompArea2D_area_entered(area: Area2D) -> void:
@@ -26,3 +25,5 @@ func _on_StompArea2D_area_entered(area: Area2D) -> void:
 func die() -> void:
 	PlayerData.score += score
 	queue_free()
+
+#no errors
